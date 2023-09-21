@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+  
+.container {
+    text-align: center;
+}
+  
+.welcome-text {
+  font-family: 'Rubik Iso', cursive;
+  font-family: 'Special Elite', cursive;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  animation: textAnimation 5s infinite alternate-reverse;
+}
+
+
+@keyframes textAnimation {
+    25% {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      font-size: 3.5rem;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
